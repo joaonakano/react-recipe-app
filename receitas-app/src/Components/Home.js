@@ -1,54 +1,49 @@
-import React, { useEffect, useState } from 'react';
-import raw from '../Assets/Recipes.json';
-import './Styles/Home.css'
+import React, { useState, useEffect } from 'react';
+
+import Form from './Form';
+import srcFile from '../Assets/Recipes.json';
+
 
 export default function Home() {
+  const [CustomRecipe, setCustomRecipe] = useState({
+    id: 'tijolo',
+    titulo: 'nokia',
+    ingredientes: 'lmao',
+    modoPreparo: 'teste'
+  });
+
   const [Data, setData] = useState([]);
-  const [verReceitas, setVerReceitas] = useState();
-    
 
   useEffect(() => {
-    setData(raw);
+    const recipesStorage = JSON.parse(localStorage.getItem("recipes"));
+
+    if (recipesStorage != null) {
+      setData(recipesStorage);
+    } else {
+      setData(srcFile);
+    }
   }, []);
 
-  const addRecipe = () => {
-    setData([...Data,
-        {
-            id: 4,
-            titulo: "Sopa de Macaco",
-            ingredientes: "Macaco e agua",
-            modoPreparo: "Ponha o Macaco na agua e ferva, bonna petit"
-        }
-    ])
-  }
-
-  const bloquearReceitas = () => {
-    if (verReceitas) {
-        setVerReceitas(false);
-    } else {
-        setVerReceitas(true);
+  useEffect(() => {
+    if (Data.length > 0) {
+      localStorage.setItem("recipes", JSON.stringify(Data));
     }
-  }
+  }, [Data]);
 
-  const listRecipes = () => {
-    console.log(Data);
+  const inserirItemNaLista = () => {
+    setData([...Data, CustomRecipe]);
   }
 
   return(
-  <>
-    {verReceitas
-    ? Data.map(item => {
-        return(
-          <>
-              <p className="recipe clicavel" >{item.titulo}</p>
-          </>
-        );
-      })
-    : null
-    }
-    <button onClick={addRecipe}>Adicionar Receita</button>
-    <button onClick={bloquearReceitas}>Ver Receitas</button>
-  </>
-
+    <div>
+      <Form />
+      <button onClick={inserirItemNaLista}>Enviar Receita</button>
+    </div>
   );
 }
+
+// REGRAS DE MANIPULAÇÃO DOS DADOS
+// 1. Quando o usuario resetar a pagina apagando cache (ctrl + shift + r), retornar as receitas principais pre-definidas
+// 2. Quando o usuario adicionar uma receita customizada, atualizar o LocalStorage
+// 3. Quando o usuario remover uma receita customizada, atualizar o LocalStorage
+// 4. O usuario podera remover as receitas pre-definidas, podendo esvaziar o LocalStorage de receitas durante a sessao com cache. Porem, se ele resetar com a remocao do cache, retornar ao item 1
