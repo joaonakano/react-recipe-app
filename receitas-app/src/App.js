@@ -1,8 +1,8 @@
 import react from 'react';
-import Home from './Components/Home'
+import RoutesApp from './Routes';
 
 export default function App() {
   return(
-    <Home />
+    <RoutesApp />
   );
 }
