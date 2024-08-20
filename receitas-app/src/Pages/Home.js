@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-
-import Form from '../Components/Form';
 import srcFile from '../Assets/Recipes.json';
+import Form from '../Components/Form';
+import './Styles/Home';
 
 export default function Home() {
   const [CustomRecipe, setCustomRecipe] = useState({
@@ -36,7 +36,7 @@ export default function Home() {
   return(
     <div>
       <Form />
-      <button onClick={inserirItemNaLista}>Enviar Receita</button>
+      <button className="send-button" onClick={inserirItemNaLista}>Enviar Receita</button>
     </div>
   );
 }
