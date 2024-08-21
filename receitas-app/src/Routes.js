@@ -14,6 +14,7 @@ import srcFile from './Assets/Recipes.json';
 import Error from './Components/Error';
 import Success from './Components/Success';
 
+
 export default function RoutesApp() {
     // Primeiro Hook - useState (armazenar em um objeto os dados do formulario apos o envio)
     const [CustomRecipe, setCustomRecipe] = useState({
@@ -61,7 +62,7 @@ export default function RoutesApp() {
         const ingredient_raw = document.getElementById("ingredient-input").value.replaceAll(", ", ",").split(",");  // ReplaceAll altera todas as ocorrencias que tem ", " para "," e depois o Split desagrega os elementos por virgula e cria um array a partir deles
         const how_to = document.getElementById("how-to-input").value;
         
-        const ingredient = ingredient_raw.filter(item => item.length !== 0); // Filter, função muito útil para formatar um array
+        const ingredient = ingredient_raw.filter(item => item.length !== 0); // Filter, função muito útil para formatar um array tirando itens vazios
         
         if (!doesDataHaveRecipe(recipe_name)) {
             setCustomRecipe({ // Tentativa de adivinhar o proximo id do array de dados e passa-lo para a chave id da receita customizada
@@ -70,20 +71,25 @@ export default function RoutesApp() {
                 ingredientes: ingredient,
                 modoPreparo: how_to
             });
+
             setMessage({type: 'success', text: 'sucesso'});
-            setTimeout(() => {
-                setMessage({type: '', text: ''});
-            }, 5000);
+            clearMessageAfterSeconds(3);
+
         } else {
             setMessage({type: 'error', text: 'erro'});
-            setTimeout(() => {
-                setMessage({type: '', text: ''});
-            }, 5000);
+            clearMessageAfterSeconds(3);
         }
 
         document.getElementById("recipe-form").reset(); // Limpando o formulario
     }
 
+    // Função para remover a mensagem de sucesso ou de erro após X segundos
+    function clearMessageAfterSeconds(seconds) {
+        setTimeout(() => {
+            setMessage({type: '', text: ''});
+        }, seconds * 1000);
+    }
+    
     // Função para retornar um booleano para a condição Nome da Receita existe no LocalStorage
     function doesDataHaveRecipe(recipe_name) {
         return Data.some(item => item.titulo === recipe_name);
@@ -93,8 +99,8 @@ export default function RoutesApp() {
         <BrowserRouter>
             <Header />
             <Routes>
-                <Route path='/' element={<Home handleSend={inserirItemNaLista} />} />
-                <Route path='/receitas' element={<Recipes data={Data} />} />
+                <Route path='/' element={<Recipes data={Data} />} />
+                <Route path='/addreceita' element={<Home handleSend={inserirItemNaLista} />} />
                 <Route path='/receita/:id' element={<RecipeDetails />} />
             </Routes>
             {message.text && (
