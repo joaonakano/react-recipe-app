@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-
+import React from 'react';
 import './Styles/Form.css';
 
 export default function Form() {
     return(
-        <form>
+        <form id="recipe-form">
             <label>Insira o Nome da Receita:</label><br/>
             <input className="name-form" id="name-input" type="text" placeholder='Bolo de Alfafa com Mel'></input><br/>
             <label>Insira os Ingredientes (separados por vírgula):</label><br/>

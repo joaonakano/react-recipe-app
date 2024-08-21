@@ -2,3 +2,12 @@
     cursor: pointer;
     background-color: rgba(100, 148, 237, 0.548);
 }
+
+.recipe-title {
+    text-decoration: none;
+    color: black;
+}
+
+.recipe-link {
+    text-decoration: none;
+}
