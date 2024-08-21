@@ -1,20 +1,27 @@
-import React from 'react';
-
-import Form from '../Components/Form';
-
+import { Link } from 'react-router-dom'
 import './Styles/Home.css';
 
-export default function Home({ handleSend }) {
-  return(
-    <div>
-      <Form />
-      <button className="send-button" onClick={handleSend}>Enviar Receita</button>
-    </div>
-  );
+export default function Recipes({ data }) {
+    return(
+        <div>
+            {data.map(objectInfo => (
+                <div className="recipe-container" key={objectInfo.id}>
+                    <Link
+                        className="recipe-link"
+                        to={`/receita/${objectInfo.id}`}
+                        state={{ recipe: objectInfo }}  // Armazena um objeto com a receita para cada iteracao
+                    >
+                        <h1 className='recipe-title'>{objectInfo.titulo}</h1>
+                    </Link>
+                </div>
+            ))}
+        </div>
+    );
 }
 
-// REGRAS DE MANIPULAÇÃO DOS DADOS
-// 1. Quando o usuario resetar a pagina apagando cache (ctrl + shift + r), retornar as receitas principais pre-definidas (FEITO)
-// 2. Quando o usuario adicionar uma receita customizada, atualizar o LocalStorage (FEITO)
-// 3. Quando o usuario remover uma receita customizada, atualizar o LocalStorage (FEITO)
-// 4. O usuario podera remover as receitas pre-definidas, podendo esvaziar o LocalStorage de receitas durante a sessao com cache. Porem, se ele resetar com a remocao do cache, retornar ao item 1 (FEITO)
+/*
+    Anotacoes que achei relevante
+    1. Podemos passar um state ao <Link /> que armazenara o objeto que quisermos
+    2. Em uma arrow function, podemos utilizar () ao inves de {} na expressao () => {}, ficando assim () => (), removendo-se a obrigatoriedade de um return
+    3. Para conseguir usar um template literal em uma tag JSX, usamos {}
+*/

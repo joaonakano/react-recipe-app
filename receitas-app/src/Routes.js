@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // Importando os Componentes
 import Header from './Components/Header';
 import RecipeDetails from './Pages/RecipeDetails';
-import Recipes from './Pages/Recipes';
+import AddRecipes from './Pages/AddRecipes';
 import Home from './Pages/Home';
 
 // Importando o SourceFile
@@ -99,8 +99,8 @@ export default function RoutesApp() {
         <BrowserRouter>
             <Header />
             <Routes>
-                <Route path='/' element={<Recipes data={Data} />} />
-                <Route path='/addreceita' element={<Home handleSend={inserirItemNaLista} />} />
+                <Route path='/' element={<Home data={Data} />} />
+                <Route path='/addreceita' element={<AddRecipes handleSend={inserirItemNaLista} />} />
                 <Route path='/receita/:id' element={<RecipeDetails />} />
             </Routes>
             {message.text && (
