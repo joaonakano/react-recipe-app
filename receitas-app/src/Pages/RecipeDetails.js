@@ -4,9 +4,9 @@ import { useLocation } from 'react-router-dom';
 import './Styles/RecipeDetails.css';
 
 export default function RecipeDetails() {
-    const location = useLocation();
-    const { recipe } = location.state;
-    const ingredientsArray = recipe.ingredientes;
+    const location = useLocation();     // Pega dados sobre a URL atual
+    const { recipe } = location.state;  // Seleciona o estado / dados sobre a receita informados nos <Link /> de outros componentes
+    const ingredientsArray = recipe.ingredientes;   // Armazena apenas o Array de ingredientes em uma constante
     
     const createAnUniqueKey = (array, item) => {   // Tive que usar (+ 10000) porque o metodo .map() requer chaves unicas para cada elemento
         let initialIndex = array.indexOf(item);

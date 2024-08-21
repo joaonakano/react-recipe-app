@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom'
+import Recipe from '../Components/Recipe';
+
 import './Styles/Home.css';
 
 export default function Recipes({ data }) {
@@ -6,13 +7,7 @@ export default function Recipes({ data }) {
         <div>
             {data.map(objectInfo => (
                 <div className="recipe-container" key={objectInfo.id}>
-                    <Link
-                        className="recipe-link"
-                        to={`/receita/${objectInfo.id}`}
-                        state={{ recipe: objectInfo }}  // Armazena um objeto com a receita para cada iteracao
-                    >
-                        <h1 className='recipe-title'>{objectInfo.titulo}</h1>
-                    </Link>
+                    <Recipe recipeObject={objectInfo} />
                 </div>
             ))}
         </div>
