@@ -1,0 +1,4 @@
+.recipe-title:hover {
+    cursor: pointer;
+    background-color: rgba(100, 148, 237, 0.548);
+}

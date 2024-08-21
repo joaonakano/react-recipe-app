@@ -6,11 +6,11 @@ export default function Form() {
     return(
         <form>
             <label>Insira o Nome da Receita:</label><br/>
-            <input className="name-form" type="text" placeholder='Bolo de Alfafa com Mel'></input><br/>
+            <input className="name-form" id="name-input" type="text" placeholder='Bolo de Alfafa com Mel'></input><br/>
             <label>Insira os Ingredientes (separados por vírgula):</label><br/>
-            <input className="ingredient-form" type="text" placeholder='alfafa, mel, ovos'></input><br/>
+            <input className="ingredient-form" id="ingredient-input" type="text" placeholder='alfafa, mel, ovos'></input><br/>
             <label>Insira o Modo de Preparo:</label><br/>
-            <textarea className="how-to-form" type="text" placeholder='1. Aqueça o forno em temperatura ambiente, 2. Bata as claras em neve'></textarea><br/>
+            <textarea className="how-to-form" id="how-to-input" type="text" placeholder='1. Aqueça o forno em temperatura ambiente, 2. Bata as claras em neve'></textarea><br/>
         </form>
     );
 }
