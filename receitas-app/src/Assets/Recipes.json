@@ -11,7 +11,8 @@
             "Sal e pimenta a gosto",
             "Azeite de oliva"
         ],
-        "modoPreparo": "1. Descasque e corte a abóbora em cubos. Pique a cebola e o alho. Rale o gengibre. Em uma panela, aqueça o azeite e refogue a cebola e o alho até ficarem dourados. Adicione o gengibre e refogue por mais 1 minuto. Adicione a abóbora e o caldo de legumes. Cozinhe até que a abóbora esteja macia. Bata a sopa no liquidificador até obter um creme liso. Tempere com sal e pimenta a gosto e sirva quente."
+        "modoPreparo": "1. Descasque e corte a abóbora em cubos. Pique a cebola e o alho. Rale o gengibre. Em uma panela, aqueça o azeite e refogue a cebola e o alho até ficarem dourados. Adicione o gengibre e refogue por mais 1 minuto. Adicione a abóbora e o caldo de legumes. Cozinhe até que a abóbora esteja macia. Bata a sopa no liquidificador até obter um creme liso. Tempere com sal e pimenta a gosto e sirva quente.",
+        "img": "https://villalvafrutas.com.br/wp-content/uploads/2021/04/Sopa-de-abobora.jpg"
     },
     {
         "id": 2,
@@ -24,8 +25,10 @@
             "2 dentes de alho",
             "Sal e pimenta a gosto",
             "Azeite de oliva"
+            
         ],
-        "modoPreparo": "1. Cozinhe o espaguete em água salgada até ficar al dente. Enquanto isso, corte o bacon em cubos e frite em uma frigideira com um pouco de azeite até ficar crocante. Pique o alho e adicione à frigideira, refogando por 1 minuto. Em uma tigela, bata os ovos e misture com o queijo parmesão. Escorra o espaguete e misture com o bacon e o alho na frigideira. Retire do fogo e acrescente a mistura de ovos e queijo, mexendo rapidamente para que o calor da massa cozinhe os ovos e forme um molho cremoso. Tempere com sal e pimenta a gosto e sirva imediatamente."
+        "modoPreparo": "1. Cozinhe o espaguete em água salgada até ficar al dente. Enquanto isso, corte o bacon em cubos e frite em uma frigideira com um pouco de azeite até ficar crocante. Pique o alho e adicione à frigideira, refogando por 1 minuto. Em uma tigela, bata os ovos e misture com o queijo parmesão. Escorra o espaguete e misture com o bacon e o alho na frigideira. Retire do fogo e acrescente a mistura de ovos e queijo, mexendo rapidamente para que o calor da massa cozinhe os ovos e forme um molho cremoso. Tempere com sal e pimenta a gosto e sirva imediatamente.",
+        "img": "https://cdn.urbano.com.br/uploads/espaguete-a-carbonara-800.jpg"
     },
     {
         "id": 3,
@@ -41,6 +44,7 @@
             "3 colheres de sopa de azeite de oliva",
             "Sal e pimenta a gosto"
         ],
-        "modoPreparo": "1. Cozinhe a quinoa conforme as instruções da embalagem e deixe esfriar. Pique o pepino, o pimentão e a cenoura em cubos pequenos. Em uma tigela grande, misture a quinoa com os legumes, o milho e a salsinha. Em uma tigela separada, prepare o molho misturando o suco de limão com o azeite, sal e pimenta. Despeje o molho sobre a salada e misture bem. Sirva fria ou em temperatura ambiente."
+        "modoPreparo": "1. Cozinhe a quinoa conforme as instruções da embalagem e deixe esfriar. Pique o pepino, o pimentão e a cenoura em cubos pequenos. Em uma tigela grande, misture a quinoa com os legumes, o milho e a salsinha. Em uma tigela separada, prepare o molho misturando o suco de limão com o azeite, sal e pimenta. Despeje o molho sobre a salada e misture bem. Sirva fria ou em temperatura ambiente.",
+        "img": "https://www.comidaereceitas.com.br/wp-content/uploads/2021/06/salada_quinoa_legumes.jpg"
     }
 ]

@@ -1,5 +1,4 @@
 import Recipe from '../Components/Recipe';
-
 import './Styles/Home.css';
 
 export default function Recipes({ data }) {
@@ -7,6 +6,7 @@ export default function Recipes({ data }) {
         <div>
             {data.map(objectInfo => (
                 <div className="recipe-container" key={objectInfo.id}>
+                    <img src={objectInfo.img} alt={objectInfo.titulo} />
                     <Recipe recipeObject={objectInfo} />
                 </div>
             ))}
