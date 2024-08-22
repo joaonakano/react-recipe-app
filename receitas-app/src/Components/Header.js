@@ -12,12 +12,14 @@ export default function Header() {
                 <img src={logo} alt="Logo" className="header_logo" />
                 <h1 className="header_title">Cozinhando com a Capivara</h1>
             </div>
+            <div className='botoes'>
             {pathname !== "/addreceita" && (    // Renderização condicional que exibe o Link apenas quando nao esta no URL proprio
                 <Link to='/addreceita' className="header_link">Nova Receita</Link>
             )}
             {pathname !== "/" && (              // Renderização condicional que exibe o Link apenas quando nao esta no URL proprio
                 <Link to='/' className="header_link">Ver Receitas</Link>
             )}
+            </div>
         </header>
     )
 }
