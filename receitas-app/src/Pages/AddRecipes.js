@@ -5,8 +5,9 @@ import Form from '../Components/Form';
 import './Styles/AddRecipes.css';
 
 export default function Home({ handleSend }) {
-  return(
-    <div>
+  return (
+    <div className="add-recipe-container">
+      <h1 className="title">Adicionar Receita</h1>
       <Form />
       <button className="send-button" onClick={handleSend}>Enviar Receita</button>
     </div>
