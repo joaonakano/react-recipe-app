@@ -24,18 +24,19 @@ body {
   }
   
   .header_logo {
-    width: 10%;
-    height: 10%;
+    width: 25%;
+    height: 30%;
     margin-right: 10px;
     margin-top: 5%;
   }
   
   .header_title {
-    font-size: 50px;
+   
+    font-size: 45px;
     margin: 0;
     color: #FFFFFF;
     text-shadow: 0 0 5px #FFFF00;
-    margin-left: 20%;
+    margin-left: 10%;
     margin-top: 5%;
   }
   
