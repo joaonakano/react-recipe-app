@@ -46,5 +46,106 @@
         ],
         "modoPreparo": "1. Cozinhe a quinoa conforme as instruções da embalagem e deixe esfriar. Pique o pepino, o pimentão e a cenoura em cubos pequenos. Em uma tigela grande, misture a quinoa com os legumes, o milho e a salsinha. Em uma tigela separada, prepare o molho misturando o suco de limão com o azeite, sal e pimenta. Despeje o molho sobre a salada e misture bem. Sirva fria ou em temperatura ambiente.",
         "img": "https://www.comidaereceitas.com.br/wp-content/uploads/2021/06/salada_quinoa_legumes.jpg"
+    },
+    {
+        "id": 4,
+        "titulo": "Frango ao Curry",
+        "ingredientes": [
+            "500g de peito de frango cortado em cubos",
+            "1 cebola picada",
+            "2 dentes de alho picados",
+            "1 colher de sopa de curry em pó",
+            "1 lata de leite de coco",
+            "1 tomate picado",
+            "Sal e pimenta a gosto",
+            "Azeite de oliva"
+        ],
+        "modoPreparo": "1. Aqueça o azeite em uma panela e refogue a cebola e o alho até ficarem macios. Adicione o frango e cozinhe até dourar. Polvilhe o curry em pó sobre o frango e misture bem. Adicione o tomate picado e o leite de coco, e cozinhe por 15 minutos ou até que o frango esteja cozido e o molho tenha engrossado. Tempere com sal e pimenta a gosto e sirva quente.",
+        "img": "https://www.mundoboaforma.com.br/wp-content/uploads/2023/01/Frango-ao-curry.jpg"
+    },
+    {
+        "id": 5,
+        "titulo": "Tacos de Carne",
+        "ingredientes": [
+            "300g de carne moída",
+            "1 cebola picada",
+            "2 dentes de alho picados",
+            "1 pimentão vermelho picado",
+            "1 colher de chá de cominho",
+            "1 colher de chá de páprica",
+            "1/2 colher de chá de pimenta caiena",
+            "Sal a gosto",
+            "Tortilhas de milho",
+            "Alface picada",
+            "Tomate picado",
+            "Queijo ralado"
+        ],
+        "modoPreparo": "1. Em uma frigideira, aqueça um pouco de azeite e refogue a cebola e o alho até ficarem macios. Adicione a carne moída e cozinhe até dourar. Acrescente o pimentão, o cominho, a páprica, a pimenta caiena e o sal, e cozinhe por mais 5 minutos. Aqueça as tortilhas conforme as instruções da embalagem. Monte os tacos com a carne, alface, tomate e queijo a gosto. Sirva imediatamente.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqaXI76QkY3VbppqMltaswD4ogHCWC2Gp_kg&s"
+    },
+    {
+        "id": 6,
+        "titulo": "Bolo de Chocolate",
+        "ingredientes": [
+            "200g de farinha de trigo",
+            "200g de açúcar",
+            "100g de cacau em pó",
+            "1 colher de sopa de fermento em pó",
+            "1/2 colher de chá de bicarbonato de sódio",
+            "1/2 colher de chá de sal",
+            "2 ovos",
+            "120ml de óleo vegetal",
+            "240ml de água quente",
+            "1 colher de chá de essência de baunilha"
+        ],
+        "modoPreparo": "1. Preaqueça o forno a 180°C e unte uma forma. Em uma tigela grande, misture a farinha, o açúcar, o cacau, o fermento, o bicarbonato e o sal. Adicione os ovos, o óleo, a água quente e a essência de baunilha, e misture bem até obter uma massa homogênea. Despeje a massa na forma e asse por 30-35 minutos ou até que um palito saia limpo ao ser inserido no centro do bolo. Deixe esfriar antes de desenformar e servir.",
+        "img": "https://cdn0.tudoreceitas.com/pt/posts/2/9/9/bolo_de_chocolate_cremoso_5992_orig.jpg"
+    },
+    {
+        "id": 7,
+        "titulo": "Omelete de Espinafre e Queijo",
+        "ingredientes": [
+            "3 ovos",
+            "1 xícara de espinafre fresco picado",
+            "50g de queijo feta esfarelado",
+            "1/4 de cebola picada",
+            "Sal e pimenta a gosto",
+            "Manteiga ou azeite para untar"
+        ],
+        "modoPreparo": "1. Em uma tigela, bata os ovos com sal e pimenta. Aqueça uma frigideira antiaderente com um pouco de manteiga ou azeite. Refogue a cebola até ficar macia, adicione o espinafre e cozinhe até murchar. Despeje os ovos batidos na frigideira e cozinhe em fogo baixo, mexendo ocasionalmente. Quando os ovos começarem a firmar, adicione o queijo feta por cima. Dobre a omelete ao meio e cozinhe por mais 1-2 minutos. Sirva quente.",
+        "img": "https://anamariareceitas.com.br/wp-content/uploads/2022/10/Omelete-de-espinafre-e-queijo.jpg"
+    },
+    {
+        "id": 8,
+        "titulo": "Arroz de Camarão",
+        "ingredientes": [
+            "300g de camarão limpo",
+            "1 xícara de arroz",
+            "1 cebola picada",
+            "2 dentes de alho picados",
+            "1 pimentão verde picado",
+            "1 tomate picado",
+            "1/2 xícara de ervilhas",
+            "1/2 xícara de cenoura ralada",
+            "1 litro de caldo de peixe",
+            "Sal e pimenta a gosto",
+            "Azeite de oliva"
+        ],
+        "modoPreparo": "1. Em uma panela, aqueça o azeite e refogue a cebola e o alho até ficarem macios. Adicione o pimentão, o tomate, as ervilhas e a cenoura, e cozinhe por alguns minutos. Acrescente o arroz e misture bem. Adicione o caldo de peixe e cozinhe até que o arroz esteja quase pronto. Adicione os camarões e cozinhe até que estejam rosados e cozidos. Tempere com sal e pimenta a gosto e sirva quente.",
+        "img": "https://assets.unileversolutions.com/recipes-v2/36806.jpg"
+    },
+    {
+        "id": 9,
+        "titulo": "Mousse de Maracujá",
+        "ingredientes": [
+            "1 lata de leite condensado",
+            "1 lata de creme de leite",
+            "1 xícara de suco de maracujá concentrado",
+            "1/2 xícara de água",
+            "1 pacote de gelatina em pó sem sabor"
+        ],
+        "modoPreparo": "1. Hidrate a gelatina na água conforme as instruções da embalagem. Em um liquidificador, bata o leite condensado, o creme de leite e o suco de maracujá até ficar homogêneo. Derreta a gelatina em fogo baixo e adicione à mistura do liquidificador, batendo novamente. Despeje a mistura em taças ou em uma forma e leve à geladeira por pelo menos 4 horas ou até firmar. Sirva gelado.",
+        "img": "https://s2-g1.glbimg.com/i8RCSdAhgEdeT1jAEgtFX34Za10=/0x0:518x335/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/7/E/wbSXcjQUmsK82Cf0eeIA/mousse-de-maracuja.jpg"
     }
+    
 ]
