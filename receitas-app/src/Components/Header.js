@@ -10,7 +10,7 @@ export default function Header() {
         <header className="header">
             <div className="header_title-container">
                 <img src={logo} alt="Logo" className="header_logo" />
-                <h1 className="header_title">Cozinhando com a Capivara</h1>
+                
             </div>
             <div className='botoes'>
             {pathname !== "/addreceita" && (    // Renderização condicional que exibe o Link apenas quando nao esta no URL proprio
