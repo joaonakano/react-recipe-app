@@ -61,6 +61,7 @@ export default function RoutesApp() {
         const recipe_name = document.getElementById("name-input").value;
         const ingredient_raw = document.getElementById("ingredient-input").value.replaceAll(", ", ",").split(",");  // ReplaceAll altera todas as ocorrencias que tem ", " para "," e depois o Split desagrega os elementos por virgula e cria um array a partir deles
         const how_to = document.getElementById("how-to-input").value;
+        const image = document.getElementById("image-input").value;
         
         const ingredient = ingredient_raw.filter(item => item.length !== 0); // Filter, função muito útil para formatar um array tirando itens vazios
         
@@ -69,7 +70,8 @@ export default function RoutesApp() {
                 id: (Data.length + 1),
                 titulo: recipe_name,
                 ingredientes: ingredient,
-                modoPreparo: how_to
+                modoPreparo: how_to,
+                img: image
             });
 
             setMessage({type: 'success', text: 'sucesso'});
